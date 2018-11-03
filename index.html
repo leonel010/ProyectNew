@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Prueba - Web Developer Jr</title>
+
+	<!-- boostrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<!-- javascript-->
+
+	<!--- <script type="js/colors.js"></script>  --->
+</head>
+
+<body>
+
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-bold">Melani Paredes</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="p-2 text-dark" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="p-2 text-dark" href="#"><i class="fab fa-linkedin-in"></i></a>
+      </nav>
+    </div>
+
+    <style type="text/css">
+    	
+    	#train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style
+    </style>
+
+ 
+      <div class="container text-center">
+        <i class="fas fa-brain fa-10x"></i>
+        <h1 class="text-uppercase mb-0"><i class="fab fa-medium-m" id="letra" class="train"></i>elani Paredes</h1>
+        <hr class="star-light">
+        <p class="font-weight-light mb-0">melaniparedes3@gmail.com </p>
+      </div>
+
+      <hr>
+ 
+      <!--   <button type="button" onclick="random_bg_color()">aleotorio</button>  -->
+
+      <div class="btn-group-toggle  text-center" data-toggle="buttons">
+	  
+
+       <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="color_random()">
+       Fondo </button>
+
+	  <button type="button" class="btn btn-primary" id="primos" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="segundoBotton()" value="valor" id="resultado" >
+       Número  1</button>  
+
+       <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"  onclick="objeto='M';mover();" id="M" >
+       Mover </button>
+
+       <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="window.location ='pags/formulario.html' " > Cuarto </button>
+
+	   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"  id="btnfinal" onclick="window.location= 'pags/grafico.html' "> Final </button>
+	
+	</div>
+
+ <!--- un poco de css --->
+	<style type="text/css">
+		
+     @media only screen and (min-width: 768px){
+     	#btnfinal{
+     		display: none;
+     	}
+     }
+
+
+
+
+	</style>
+
+  
+  <!--- javascript--> 
+
+	<script type="text/javascript">
+
+
+		/* aqui van las funciones -*/
+		/* funcion req. uno */
+		
+		function color_random() {
+    	var a = Math.floor(Math.random() * 254);
+	    var b = Math.floor(Math.random() * 254);
+	    var c = Math.floor(Math.random() * 254);
+	    var rdColor = "rgb(" + a + "," + b + "," + c + ")";
+	 	console.log(rdColor);
+	  
+	    document.body.style.background = rdColor;
+	    }
+
+
+      function segundoBotton(){
+
+  swal({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  type: 'error',
+  confirmButtonText: 'Cool'
+})
+
+      }
+
+      
+
+	 
+
+
+       
+	</script>
+  
+
+</body>
+</html>

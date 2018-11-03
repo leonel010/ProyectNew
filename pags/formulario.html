@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Prueba - Web Developer Jr</title>
+
+	<!-- boostrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<!-- sweet alert-->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-bold">Melani Paredes</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="p-2 text-dark" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="p-2 text-dark" href="#"><i class="fab fa-linkedin-in"></i></a>
+      </nav>
+    </div>
+
+     
+   <div class="container">
+	  <h2>Introducción</h2>
+	  <p>Completa el formulario correctamente.</p>
+
+	  <hr>
+	 <form class="form-horizontal simple-validation" id="frmExample" novalidate>
+
+    		<div class="form-group required">
+				<label for="name" class="col-sm-2 control-label">Nombre</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="name" placeholder="Nombre" data-title="Ingresa tu nombre">
+				</div>
+			</div>
+			
+			<div class="form-group required">
+				<label for="age" class="col-sm-2 control-label">Edad</label>
+				<div class="col-sm-7">
+					<input type="number" class="form-control" id="age" placeholder="Edad" data-title="Age required - Only numeric values allowed">
+
+					<br>
+					<div class="form-group required">
+				<label for="age" class="col-sm-4 control-label">Color favorito</label>
+				<div class="col-sm-7">
+					<input type="color" class="form-control" id="color" >
+
+					<br>
+
+			<div class="frmBtn">
+						<button type="button" onclick="agregarDatos()" class="btn btn-primary"><i class="fa fa-save"></i> Continuar</button>
+						
+						<button type="button" onclick="location.href='../index.html'" class="btn btn-danger delete"><i class="fa fa-trash"></i> Volver</button>
+					</div>
+     </div>
+ </form>
+
+      <script type="text/javascript">
+      	
+
+        function agregarDatos(){
+        	var name = document.getElementById('name').value;
+        	var age=document.getElementById('age').value; 
+           var color= document.getElementById('color').value;
+
+              if (name.length!=0 && age.length!=0 ){
+             alert("Mi Nombre es  "+name+"\n"+"tengo  "+age +" años"+"\n"+"Mi Color favorito es  "+color);
+
+              }
+              else { alert("El campo nombre o Edad estan vacios, por favor llenar los campos");}
+
+        	persona.name = document.getElementById('name').value;
+
+        	
+        	alert("color favorito es : "+color);
+        	
+
+
+
+
+        	datos.push(persona);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+</body>
+</html>
