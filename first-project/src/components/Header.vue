@@ -5,7 +5,7 @@
 </template>
 <script setup>
 
-import Weather from '@/modules/temperatura/Weather.vue';
+import Weather from '@/components/Weather.vue';
 
 </script>
 

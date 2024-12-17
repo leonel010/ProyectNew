@@ -15,7 +15,7 @@ onMounted(()=>{
   useWeather()
 })
 
-</script>
+</script> 
 
 <style>
 </style>
